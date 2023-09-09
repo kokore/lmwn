@@ -9,6 +9,7 @@ import (
 
 func GetCovidSummary(c *gin.Context) {
 	result, err := GetCovidSummaryService()
+
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, err)
 		return

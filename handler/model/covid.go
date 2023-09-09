@@ -18,3 +18,8 @@ type CovidRecord struct {
 	ProvinceEn     string      `json:"ProvinceEn"`
 	StatQuarantine int         `json:"StatQuarantine"`
 }
+
+type CovidSummary struct {
+	Province map[string]int `json:"Province"`
+	AgeGroup map[string]int `json:"AgeGroup"`
+}
