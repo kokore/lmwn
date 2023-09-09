@@ -1,0 +1,5 @@
+app:
+  name: covid
+  port: 3000
+covidapi:
+  CovidCaseURL: https://static.wongnai.com/devinterview/covid-cases.json
