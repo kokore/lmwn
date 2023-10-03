@@ -1,7 +1,7 @@
 package main
 
 import (
-	"covid/handler/covid"
+	covid "covid/handler"
 	"covid/internal/config"
 	"fmt"
 	"log"

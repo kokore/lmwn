@@ -1,8 +1,9 @@
 package covid
 
 import (
-	"covid/handler/model"
 	"covid/internal/response"
+	"covid/model"
+	covid "covid/repository"
 )
 
 func getAgeGroup(age int) string {
@@ -20,7 +21,7 @@ func getAgeGroup(age int) string {
 
 func GetCovidSummaryService() (*model.CovidSummary, *response.Response) {
 
-	covidCase, err := GetCovidCasesAPI()
+	covidCase, err := covid.GetCovidCasesAPI()
 	if err != nil {
 		return nil, err
 	}

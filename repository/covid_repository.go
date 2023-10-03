@@ -1,9 +1,9 @@
 package covid
 
 import (
-	"covid/handler/model"
 	"covid/internal/config"
 	"covid/internal/response"
+	"covid/model"
 	"encoding/json"
 	"net/http"
 )
